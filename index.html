@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhananjaya - Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Dhananjaya - Full Stack Developer specializing in modern web technologies. View my portfolio and get in touch."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Web Developer, JavaScript, React, Node.js, Portfolio"
+    />
+    <meta name="author" content="Dhananjaya" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzY2NmZmZiIvPgo8dGV4dCB4PSIxNiIgeT0iMjIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pgo8L3N2Zz4K"
+    />
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Dhananjaya</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="files/My_Resume.pdf" download class="resume-btn">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>Dhananjaya</h1>
+        <p class="subtitle">Full Stack Developer</p>
+        <p class="description">
+          Crafting modern web experiences with cutting-edge technologies and
+          creative solutions
+        </p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-content">
+        <div class="about-image slide-in-left">
+          <img src="photo1.jpg" alt="" />
+        </div>
+        <div class="about-text slide-in-right">
+          <h3>Hi, I'm Dhananjaya!</h3>
+          <p>
+            I'm a passionate Full Stack Developer with over 2 years of
+            experience creating digital solutions that make a difference. I
+            specialize in modern web technologies and love turning complex
+            problems into simple, beautiful designs.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies,
+            contributing to open source projects, or enjoying a good cup of
+            coffee while sketching out my next big idea.
+          </p>
+          <div class="highlights">
+            <div class="highlight">
+              <div class="number">20+</div>
+              <div class="label">Projects</div>
+            </div>
+            <div class="highlight">
+              <div class="number">2+</div>
+              <div class="label">Years</div>
+            </div>
+            <div class="highlight">
+              <div class="number">100%</div>
+              <div class="label">Dedication</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title fade-in">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-icon">💻</div>
+          <h3>Programming Languages</h3>
+          <p>Dart, Python, JavaScript, SQL, HTML, CSS</p>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚙</div>
+          <h3>Frameworks</h3>
+          <p>Flutter, Django, Flask</p>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🗄</div>
+          <h3>Database Management</h3>
+          <p>Firebase, MySQL, SQLite</p>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🛠</div>
+          <h3>Tools</h3>
+          <p>Visual Studio Code, Git</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title fade-in">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Serve Hub -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <a href="#" target="_blank">
+              <img src="assets/projects/servehub.jpg" alt="Serve Hub App" />
+            </a>
+          </div>
+          <div class="project-content">
+            <h3>Serve Hub – Home Service Booking App</h3>
+            <p>
+              Flutter-based home service app with 6+ service categories and
+              role-based UI for customers and providers. Integrated with
+              Firebase for real-time data synchronization.
+            </p>
+            <div class="project-links">
+              <!-- <a href="#" class="project-link" target="_blank">Live Demo</a> -->
+              <a
+                href="https://github.com/DHANANJAYA0013/ServeHub"
+                class="project-link"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Library Management System -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <!-- <a href="https://github.com/dhananjaya0013" target="_blank"> -->
+              <img
+                src="assets/projects/library.jpg"
+                alt="Library Management System"
+              />
+            <!-- </a> -->
+          </div>
+          <div class="project-content">
+            <h3>Library Management System</h3>
+            <p>
+              Built using Python, Django, and MySQL to manage book check-outs,
+              returns, and overdue reminders. Includes search functionality and
+              librarian-friendly interface.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/DHANANJAYA0013/LMSDjango"
+                class="project-link"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Profile Finder -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <!-- <a href="https://github.com/dhananjaya0013" target="_blank"> -->
+              <img
+                src="assets/projects/profile.jpg"
+                alt="GitHub Profile Finder"
+              />
+            <!-- </a> -->
+          </div>
+          <div class="project-content">
+            <h3>Profile Finder</h3>
+            <p>
+              A Django-based web app that fetches and displays GitHub user
+              profiles with repositories, followers, and activity using GitHub’s
+              API.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/DHANANJAYA0013/Profile-Finder"
+                class="project-link"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Website -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <!-- <a href="https://github.com/dhananjaya0013" target="_blank"> -->
+              <img
+                src="assets/projects/portfolio.jpg"
+                alt="Portfolio Website"
+              />
+            <!-- </a> -->
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>
+              A fully responsive personal portfolio built with HTML, CSS, and
+              JavaScript. Includes smooth animations, a project showcase, and a
+              contact form.
+            </p>
+            <div class="project-links">
+              <!-- <a href="#" class="project-link" target="_blank">Live Demo</a> -->
+              <a
+                href="https://github.com/DHANANJAYA0013/Portfolio1"
+                class="project-link"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Employee Management System -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <!-- <a href="https://github.com/dhananjaya0013" target="_blank"> -->
+              <img
+                src="assets/projects/employee.jpg"
+                alt="Employee Management System"
+              />
+            <!-- </a> -->
+          </div>
+          <div class="project-content">
+            <h3>Employee Management System</h3>
+            <p>
+              Developed with Python, Django, and SQLite. Features intuitive
+              admin dashboard for tracking employee records and generating
+              reports.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/DHANANJAYA0013/EMSDjango"
+                class="project-link"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- GameZone -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <!-- <a href="https://github.com/dhananjaya0013" target="_blank"> -->
+              <img src="assets/projects/game.jpg" alt="GameZone Website" />
+            <!-- </a> -->
+          </div>
+          <div class="project-content">
+            <h3>GameZone – Gaming Website</h3>
+            <p>
+              A gaming platform built with HTML, CSS, Python (Flask), and
+              SQLite. Users can browse, play, rate, and review dozens of games.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/DHANANJAYA0013/GameZone1"
+                class="project-link"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Certificates Section -->
+    <section class="section certificates-section" id="certificates">
+      <h2 class="section-title">Certificates</h2>
+
+      <div class="carousel-container">
+        <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carouselTrack">
+            <li class="certificate-card">
+              <img src="assets/projects/mongodb.jpg" alt="Certificate 1" />
+              <p>MongoDB</p>
+            </li>
+            <li class="certificate-card">
+              <img src="assets/projects/flutter.jpg" alt="Certificate 2" />
+              <p>Flutter</p>
+            </li>
+            <li class="certificate-card">
+              <img src="assets/projects/research.jpg" alt="Certificate 3" />
+              <p>Research Methodologies</p>
+            </li>
+          </ul>
+        </div>
+
+        <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>
+            I’m always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision.
+          </p>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a
+              href="https://github.com/dhananjaya0013"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dhananjaya-poojary-232057379?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:dhananjayad754@example.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Status message -->
+      <p id="status-message"></p>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; 2025 Dhananjaya. All rights reserved. Built with ❤️ and lots of
+        coffee.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Font Awesome for social icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("1LRcY7982yGR2XylP"); // Your public key
+      })();
+
+      const form = document.getElementById("contact-form");
+      const statusMessage = document.getElementById("status-message");
+      const submitBtn = form.querySelector(".submit-btn");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        emailjs
+          .sendForm("service_wsypaot", "template_4ir6kbp", form)
+          .then(() => {
+            statusMessage.textContent = "✅ Message sent successfully!";
+            form.reset();
+          })
+          .catch(() => {
+            statusMessage.textContent = "❌ Error! Please try again later.";
+          })
+          .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+          });
+      });
+    </script>
+  </body>
+</html>
